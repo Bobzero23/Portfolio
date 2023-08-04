@@ -45,6 +45,19 @@ img {
     z-index: 5;
 }
 
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 1.25rem;
+    color: var(--dark-two);
+    line-height: 1.6;
+}
+
 /* End Base Styles */
 
 /* Header */
@@ -106,5 +119,32 @@ nav .container {
     background-color: #6b44e0;
 
 }
+
+
+.header-content .container.grid-2 {
+    grid-template-columns: 2.5fr 3.5fr;
+    min-height: calc(100vh - 6rem);
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
+.header-title {
+    font-size: 3.8rem;
+    line-height: 0.8;
+    color: var(--dark-one);
+}
+
+.header-content .text {
+    margin: 2.15rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: .85rem 2rem;
+    background-color: var(--main-color);
+    color: var(--light-one);
+    border-radius: 2rem;
+}
+
 
 /* End Header */
